@@ -1,0 +1,32 @@
+/* Escreva um programa que leia um arquivo e 
+conte quantos caracteres, espaços, tabs e 
+newlines estão presentes */
+
+#include <stdio.h>
+
+int main() {
+    FILE *fp;
+    char nomeArquivo[100];
+    int pqtdecar = 0;
+
+    printf("Digite o nome do arquivo: ");
+    scanf("%s", nomeArquivo);
+
+    fp = fopen(nomeArquivo, "r");
+
+    if (fp == NULL) {
+        printf("Erro ao abrir o arquivo.\n");
+        return 1;
+    }
+
+    while (fgetc(fp) != EOF) {
+        pqtdecar++;
+    }
+
+    fclose(fp);
+
+    printf("Quantidade de Caracteres: %d\n", pqtdecar);
+
+    return 0;
+}
+
