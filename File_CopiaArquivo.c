@@ -1,10 +1,10 @@
 /* Creating a file copy */
 #include <stdio.h>
-main( )
+int main( )
 {
   FILE *fOriginal, *fCopia;
   char ch;
-  fOriginal = fopen ("Arquivo1.txt", "r" );
+  fOriginal = fopen ("arquivo1.txt", "r" );
   if (fOriginal == NULL )
   {
     puts ( "Nao foi possivel abrir o arquivo!!!" ) ;
