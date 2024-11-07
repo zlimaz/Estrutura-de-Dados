@@ -16,7 +16,9 @@ int main(){
     printf("digite o terceiro numero inteiro\n");
     scanf("%d", &z);
 
-    printf("o resultado e: %d\n", x*y*z);
+    resultado =  x*y*z;
+
+    printf("o resultado e: %d\n", resultado);
     
-    
+
 }
