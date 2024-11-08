@@ -54,7 +54,7 @@ return 0;
 
 //programa para calcular algumas coisas e mostrar qual numero maior e menor dos citados
 
-#include <stdio.h>
+/*#include <stdio.h>
 
 int main() {
     int x, y, z;
@@ -86,4 +86,14 @@ int main() {
 
 
     return 0;
+}
+*/
+int main(){
+
+int grau;
+
+printf("Digite um valor:\n");
+scanf("%d", &grau);
+
+grau >= 60 ? printf("Aprovado\n") : printf("Reprovado\n");
 }
