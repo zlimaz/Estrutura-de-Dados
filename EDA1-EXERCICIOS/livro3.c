@@ -88,6 +88,8 @@ int main() {
     return 0;
 }
 */
+
+/*
 int main(){
 
 int grau;
@@ -96,4 +98,15 @@ printf("Digite um valor:\n");
 scanf("%d", &grau);
 
 grau >= 60 ? printf("Aprovado\n") : printf("Reprovado\n");
+}*/
+
+
+int main() {
+int numero;
+numero = 79417;
+//Valor de 'numero'
+printf("Valor: %d\n", numero);
+//Endereço de 'numero'
+printf("Endereço: %p\n", &numero);
+return 0;
 }
