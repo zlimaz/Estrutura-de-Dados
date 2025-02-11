@@ -435,3 +435,13 @@ Idade 45 não encontrada!
 
 Programa finalizado com sucesso.*/
 
+int DesalocaABP(TABPNo* root) {
+    if (root == NULL) {
+        return 0;
+    }
+    int count = 1;
+    count += DesalocaABP(root->left);
+    count += DesalocaABP(root->right);
+    free(root);
+    return count;
+}
